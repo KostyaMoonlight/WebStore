@@ -1,0 +1,10 @@
+﻿@model IEnumerable<WebStore.BusinessLogic.DTO.Product.ProductDTO>
+@{
+    ViewBag.Title = "Products";
+}
+@foreach (var product in @Model)
+{
+    <p>
+        <h3>@product.Name - @product.Price - @product.CategoryName</h3>       
+    </p>
+}
